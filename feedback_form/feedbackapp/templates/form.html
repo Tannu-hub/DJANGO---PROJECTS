@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            
+        body {
+            background: #e8f1ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 380px;
+            background: rgb(163, 145, 145);
+            padding: 25px;
+            margin: 60px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #b40c8a;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 5px ;
+            border-radius: 6px;
+            border: 1px solid #b0c7ff;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #82a5eb;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #112141;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .view-btn {
+            margin-top: 15px;
+            background: #278241;
+        }
+    </style>
+    
+</head>
+<body>
+  <div class="container">
+     <center>
+         {% if submitted == True %}
+         <h2>thank you for feedback...</h2>
+         <button> <a href="{% url 'feedbacks'   %}">view feedbacks</a>  </button>
+         {% else  %}
+    
+         <h1>Enter your feedback below</h1>
+         <form action="" method="post">
+            {% csrf_token     %}
+
+            <label for="name"></label>
+            <input type="text" placeholder="enter your name" name="name">
+            <br><br>
+            <textarea name="feedback" id="" placeholder="type your feedback here"></textarea>
+            <br><br>
+            <button>submit</button>
+            <br><br>
+         </form>
+     </center>
+      <button> <a href="{% url 'feedbacks'   %}"></a>  view feedbacks</button>
+    
+        {% endif %}
+    <h1>{{submitted}} </h1>
+  </div>
+    
+</body>
+</html>
