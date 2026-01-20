@@ -1,0 +1,77 @@
+/* Full screen setup */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090616;
+}
+
+/* Container for the message and buttons */
+.delete-container {
+    text-align: center;
+    background: #d7ded9;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(230, 225, 225, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+button, .cancel-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+/* Yes button */
+button {
+    background-color: #4CAF50; /* default green */
+    color: white;
+}
+
+/* Yes hover blue */
+button:hover {
+    background-color: #2196F3;
+}
+
+/* Cancel button */
+.cancel-btn {
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Cancel hover red */
+.cancel-btn:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Remove link styles */
+.cancel-btn a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}

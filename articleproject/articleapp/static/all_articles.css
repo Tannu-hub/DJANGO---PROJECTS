@@ -1,0 +1,95 @@
+/* ---------- Global Styling ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #5ba3a9;
+}
+
+h1 {
+    text-align: center;
+    color: #d9534f;
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: 95%;         /* bigger width */
+    margin: auto;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* ---------- Article Box (Separated) ---------- */
+.article-card {
+    background: #ffffff;
+    border-bottom: 6px solid #3498db;
+    border-top: 6px solid #3498db;
+    border-left: 6px solid #3498db;            /* for left border*/
+    border-right: 6px solid #3498db;                    /* for right border*/
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);      /* shadow + hover effect */
+    transition: 0.3s;
+    box-sizing: border-box;      /* make card full width of container */
+}
+
+.article-card:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+    box-shadow: 15px 20px 25px rgba(223, 7, 147, 0.12);
+    
+}
+
+.article-title {
+    font-size: 22px;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #217dbb;
+}
+
+.read-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------- Bottom Navigation Buttons ---------- */
+.bottom-btns {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bottom-btns button {
+    margin: 0 10px;
+}

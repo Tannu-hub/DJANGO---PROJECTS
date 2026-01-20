@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete article</title>
+    <link rel="stylesheet" href="{% static 'delete_articles.css' %}">
+</head>
+<body>
+     <div class="delete-container">
+
+        <h1>Are you sure you want to delete it </h1>
+        <form action="" method="post">
+
+            {% csrf_token %}
+            <button>Yes</button>
+            <button type="button" class="cancel-btn" ><a href="{% url 'all_articles' %}">Cancel</a></button>
+        </form>
+     </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        background: #970b0b;
+        margin: 0;
+        padding: 0;
+        }
+
+       .container {
+        
+        width: 90%;
+        max-width: 900%;
+        margin: 30px auto;
+        background: rgb(25, 245, 28);
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .title {
+        text-align: center;
+        font-size: 32px;
+        color:rebeccapurple;
+        margin-bottom: 20px;
+        
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #0654c2;
+            text-align: justify;
+        }
+    
+ 
+        hr {
+        margin: 25px 0;
+        border: 0;
+        height: 2px;
+        background: #c90808;
+        }
+
+        .btn-group {
+        text-align: center;
+        margin-top: 10px;
+        border-radius: 20px;
+        }
+          
+
+        .btn {
+    
+        text-decoration: none;
+        background: #007bff;
+        color: white;
+        padding: 12px 22px;
+        margin: 5px;
+        border-radius: 10px;
+        font-size: 16px;
+        display: inline-block;
+        transition: 0.3s ease;
+        }
+
+
+        .btn:hover {
+        background: #0d9144;
+        transform: scale(1.06);
+        }
+
+</style>
+    
+</head>
+<body>
+    <div class="container">
+    <h1 class="title">Welcome To The ArticleWorld</h1>
+    <p>All Articles is a dedicated section where users can explore every 
+        article published on the platform in one place. It provides a complete collection of posts,
+        covering a wide range of topics contributed by different authors. Each article includes its title,
+        description, author details, and publication date, making it easy for readers to find valuable 
+        information. Whether someone wants to revisit older posts or discover newly added content, the All
+        Articles page ensures smooth navigation and a user-friendly reading experience.
+    </p>
+    <hr>
+    <div class="btn-group">
+        <button><a href="{% url 'form' %}">add Articles</a></button>
+        <button><a href="{% url 'all_articles' %}">show Article</a></button>
+    </div>
+
+    </div>
+
+</body>
+</html>

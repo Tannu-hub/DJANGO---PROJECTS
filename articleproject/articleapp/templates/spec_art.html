@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Article</title>
+    <link rel="stylesheet" href="{% static 'spec_art.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>{{data.title}}</h1>
+        <h3>By : {{data.author}} on {{data.date}} </h3>
+        <hr>
+        <p>{{data.description}} </p>
+        <div class="btn-group">
+            <button><a href="{% url 'all_articles' %}">All Articles</a></button>
+            <button><a href="{% url 'update' data.id %}">Update</a></button>
+            <button><a href="{% url 'delete' data.id %}">delete</a></button>
+        </div>
+   
+   
+    </div>
+</body>
+</html>
